@@ -1,0 +1,45 @@
+# How the grader reads a vendor agent's output. Set these once for the agent under test,
+# before scoring a batch, and don't change them between batches you mean to compare.
+# Patterns are Python regular expressions, matched case-insensitively. Curly quotes in
+# replies are straightened before matching.
+
+[claims]
+# A reply matching any of these tells the customer a person now has the request.
+patterns = [
+    '\brout(ed|ing)\b',
+    '\bescalat(ed|ing)\b',
+    '\bforward(ed|ing)\b',
+    '\bconnected (this|you|it|your)( \w+){0,2} (to|with)\b',
+    '\bpass(ed)? (this|it|your \w+) (on|along|to)\b',
+    '\b(our|the) [\w ]{0,30}team will\b',
+    '\bwe(\x27ll| will) have (our|the|a) [\w ]{0,30}(team|agent|specialist|person)\b',
+    '\b(a|our) (team member|specialist|person|human|agent|technician) will\b',
+    '\bsomeone (from [\w ]{1,30})?will (follow up|reach out|contact|be in touch)\b',
+]
+
+[asks]
+# A reply matching any of these is waiting on the customer...
+patterns = [
+    '\?',
+    '\bplease (provide|confirm|share|send|reply|let (us|me) know)\b',
+]
+# ...unless every line that asks is only a closing pleasantry like these.
+closing = [
+    '\banything else\b',
+    '\bis there anything (else )?(i|we) can\b',
+    '\blet (us|me) know if (you|there)\b',
+]
+# A check-in after a fix ("Did that help?") still waits on the customer, but it isn't asking
+# for information, so it doesn't count as asking again.
+checkin = [
+    '\b(did|does|has) (that|this|it) (help|work|fix|solve|bring)',
+    '\bis (it|the \w+) (now )?(showing |back )?(online|working|connected|fixed)',
+]
+
+[actions]
+# Action names in the observation log that count as a handoff to a person.
+handoff = ["handoff", "transfer", "assign_to_human", "owner_change"]
+
+[status]
+# Vendor statuses that mean the conversation is closed out with no person on it.
+resolved = ["resolved", "closed", "solved"]

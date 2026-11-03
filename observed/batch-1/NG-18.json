@@ -1,0 +1,16 @@
+{
+  "case": "NG-18",
+  "run": "batch-1",
+  "agent": "sim-agent v1",
+  "conversation": "https://vendor.example/conversations/batch-1-ng-18",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Noted, thanks.",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "case": "NG-20",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-20",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Noted, thanks.",
+      "actions": [
+        "handoff"
+      ],
+      "status_after": "with_human"
+    }
+  ]
+}

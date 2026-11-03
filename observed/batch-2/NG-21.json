@@ -1,0 +1,16 @@
+{
+  "case": "NG-21",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-21",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Let's try one thing first: update the Northgate app from your app store, then sign out and back in. Did that fix it?",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

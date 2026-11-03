@@ -1,0 +1,14 @@
+[project]
+name = "vendor-agent-uat-kit"
+version = "0.1.0"
+description = "Acceptance-test a vendor's AI support agent before go-live: grade what it did against what it said and what the rules expected."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+xlsx = ["openpyxl>=3.1"]
+dev = ["pytest>=8.0", "openpyxl>=3.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

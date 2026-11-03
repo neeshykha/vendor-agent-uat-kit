@@ -1,0 +1,16 @@
+{
+  "case": "NG-14",
+  "run": "batch-1",
+  "agent": "sim-agent v1",
+  "conversation": "https://vendor.example/conversations/batch-1-ng-14",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "You're writing to Northgate's automated assistant. Tell me what's going on with the lock and I'll help or get it to the right person.",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

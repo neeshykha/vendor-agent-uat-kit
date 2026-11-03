@@ -1,0 +1,92 @@
+[
+  {
+    "case": "NG-21",
+    "code": "HANDOFF_MISSING",
+    "turn": 1
+  },
+  {
+    "case": "NG-21",
+    "code": "RESOLVED_WHILE_WAITING",
+    "turn": 1
+  },
+  {
+    "case": "NG-22",
+    "code": "HANDOFF_MISSING",
+    "turn": 1
+  },
+  {
+    "case": "NG-22",
+    "code": "RESOLVED_WHILE_WAITING",
+    "turn": 1
+  },
+  {
+    "case": "NG-27",
+    "code": "SAID_NOT_DONE",
+    "turn": 1
+  },
+  {
+    "case": "NG-27",
+    "code": "CLOSED_AFTER_CLAIM",
+    "turn": 1
+  },
+  {
+    "case": "NG-08",
+    "code": "ASKED_AGAIN",
+    "turn": 2
+  },
+  {
+    "case": "NG-09",
+    "code": "HANDOFF_EARLY",
+    "turn": 1
+  },
+  {
+    "case": "NG-10",
+    "code": "RESOLVED_WHILE_WAITING",
+    "turn": 1
+  },
+  {
+    "case": "NG-23",
+    "code": "RESOLVED_WHILE_WAITING",
+    "turn": 1
+  },
+  {
+    "case": "NG-26",
+    "code": "RESOLVED_WHILE_WAITING",
+    "turn": 1
+  },
+  {
+    "case": "NG-26",
+    "code": "ASKED_AGAIN",
+    "turn": 2
+  },
+  {
+    "case": "NG-30",
+    "code": "HANDOFF_EARLY",
+    "turn": 1
+  },
+  {
+    "case": "NG-17",
+    "code": "HANDED_OFF_INSTEAD",
+    "turn": 1
+  },
+  {
+    "case": "NG-18",
+    "code": "REPLIED_WHEN_SILENT",
+    "turn": 1
+  },
+  {
+    "case": "NG-20",
+    "code": "REPLIED_WHEN_SILENT",
+    "turn": 1
+  },
+  {
+    "case": "NG-24",
+    "code": "NEW_THREAD",
+    "turn": 1
+  },
+  {
+    "case": "NG-25",
+    "code": "NEW_THREAD",
+    "turn": 1
+  }
+]

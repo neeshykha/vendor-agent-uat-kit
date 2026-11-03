@@ -1,0 +1,24 @@
+{
+  "case": "NG-07",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-07",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Let's try one thing first: update the Northgate app from your app store, then sign out and back in. Did that fix it?",
+      "actions": [],
+      "status_after": "open"
+    },
+    {
+      "customer": "I updated it and signed out and back in. Still crashes.",
+      "reply": "Thanks for the details. I've passed this to our support team, and someone will follow up on this thread.",
+      "actions": [
+        "handoff"
+      ],
+      "status_after": "with_human"
+    }
+  ]
+}

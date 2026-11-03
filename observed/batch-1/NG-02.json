@@ -1,0 +1,18 @@
+{
+  "case": "NG-02",
+  "run": "batch-1",
+  "agent": "sim-agent v1",
+  "conversation": "https://vendor.example/conversations/batch-1-ng-02",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Thanks for the details. I've passed this to our support team, and someone will follow up on this thread.",
+      "actions": [
+        "handoff"
+      ],
+      "status_after": "with_human"
+    }
+  ]
+}

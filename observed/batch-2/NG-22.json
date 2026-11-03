@@ -1,0 +1,16 @@
+{
+  "case": "NG-22",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-22",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Let's try one thing first: on the device, open Settings > Network and choose Reconnect, then wait about a minute. Is it showing online now?",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

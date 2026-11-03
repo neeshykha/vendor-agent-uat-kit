@@ -1,0 +1,22 @@
+{
+  "case": "NG-26",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-26",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "I can help with that. Please confirm your community and unit number, and I'll take it from there.",
+      "actions": [],
+      "status_after": "resolved"
+    },
+    {
+      "customer": "Grace Okafor, unit 11C.",
+      "reply": "Thanks. Before I go further, which app version are you on, and when did this start?",
+      "actions": [],
+      "status_after": "open"
+    }
+  ]
+}

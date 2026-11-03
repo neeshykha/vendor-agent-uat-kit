@@ -1,0 +1,16 @@
+{
+  "case": "NG-15",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-15",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "I can only help with Northgate's apps and devices. If something in your apartment isn't working, send the details and I'll take a look.",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

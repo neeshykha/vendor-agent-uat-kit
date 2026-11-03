@@ -1,0 +1,22 @@
+{
+  "case": "NG-08",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-08",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Let's try one thing first: on the device, open Settings > Network and choose Reconnect, then wait about a minute. Is it showing online now?",
+      "actions": [],
+      "status_after": "open"
+    },
+    {
+      "customer": "Did that, still offline.",
+      "reply": "Thanks. Before I go further, which app version are you on, and when did this start?",
+      "actions": [],
+      "status_after": "open"
+    }
+  ]
+}

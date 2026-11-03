@@ -1,0 +1,16 @@
+{
+  "case": "NG-12",
+  "run": "batch-2",
+  "agent": "sim-agent v2",
+  "conversation": "https://vendor.example/conversations/batch-2-ng-12",
+  "log_available": true,
+  "new_conversation": null,
+  "turns": [
+    {
+      "customer": "",
+      "reply": "Here's how: in the Northgate app, open the device, tap Settings, and follow the prompts for that change. The full guide is under Help in the app.",
+      "actions": [],
+      "status_after": "resolved"
+    }
+  ]
+}

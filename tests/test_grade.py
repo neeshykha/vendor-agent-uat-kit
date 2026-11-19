@@ -29,14 +29,14 @@ def test_claim_on_a_later_turn_is_covered_by_an_earlier_handoff(cfg):
 
 
 def test_curly_apostrophes_and_softer_claims_still_count(cfg):
-    reply = "We’ll have our Customer Care team resend the activation email."
+    reply = "We’ll have our support team resend the activation email."
     r = grade.grade_case(make_case(), make_obs((reply, (), "open")), cfg)
     assert ("SAID_NOT_DONE", 1) in codes(r)
 
 
 def test_connected_this_request_counts_as_a_claim(cfg):
-    # Missed by the first version of the patterns in the back-test; added after it.
-    reply = "I’ve connected this request to our Customer Care team for further assistance."
+    # Missed by the first version of the patterns; added afterward.
+    reply = "I’ve connected this request to our support team for further assistance."
     r = grade.grade_case(make_case(), make_obs((reply, (), "Resolved")), cfg)
     assert ("SAID_NOT_DONE", 1) in codes(r)
 

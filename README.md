@@ -4,11 +4,11 @@ Acceptance-test a vendor's AI support agent before you let it talk to your custo
 
 Most agent testing covers your own agents, or audits outcomes after launch. This covers the step in between: deciding whether someone else's agent is ready.
 
-**Status:** v0.1, built November 3, 2026. It has a synthetic demo and 114 tests, and it's been back-tested on a real vendor's staging agent (results below).
+**Status:** v0.1, built November 3, 2026. It has a synthetic demo and 114 tests.
 
 ## What it checks
 
-The checks come from testing a vendor's email agent before go-live. In order of how much they mattered:
+In order of how much they matter:
 
 1. **Said vs. did.** An agent can tell a customer "we've routed this" with nothing behind it. The kit reads the reply text and the action log separately, and a claim with no handoff behind it is its own failure.
 2. **Closed after the claim.** If that conversation then closes as resolved, that's a second failure. The customer was promised a person, and the dashboard counts a deflection.
@@ -67,14 +67,6 @@ python -m uatkit report graded/batch-3.json --previous graded/batch-2.json --out
 ```
 
 Set `kit.toml` once for the agent you're testing, before you score anything, and leave it alone between batches you mean to compare.
-
-## Does it work on a real agent?
-
-I back-tested it on a real vendor's staging email agent: 39 tests across five batches, each graded by hand before the kit existed. The grader's findings matched the hand labels on 35 of the 39 tests, and on all 26 hand labels it has a check for. With settings frozen before the first score, it was 34 and 25. The miss was one phrasing of a handoff claim, and I widened that pattern afterward. That's the only change to the settings.
-
-The four disagreements were all "marked resolved while waiting on the customer": replies that asked for more and then closed themselves. On review, three were real and the hand grading had missed them, which brings the match to 38 of 39. The fourth is a grader over-flag: a redirect that invited a spam sender to write back.
-
-Two caveats. First, it isn't a blind test: I wrote the claim phrases after reading those replies, so it shows the grader reproduces careful hand grading, not that it would catch a new phrasing cold. Second, the vendor, the cases, and the results stay private, and only these counts are published.
 
 ## Limits
 
